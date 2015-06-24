@@ -1,0 +1,52 @@
+<!doctype html>
+<html ng-app="convergenApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="fb:app_id" content="225566034301654" />
+    <meta property="og:image" content="http://convergen.co/images/convergen-web2.png"/>
+    <meta property="og:title" content="Convergen Streaming Web Provider"/>
+    <meta name="description" content="Kami menyediakan jasa pembuatan web streaming yang mudah dan sesuai keinginan anda">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://convergen.co/images/convergen-web2.png">
+    <meta name="twitter:title" content="Convergen Streaming Web Provider">
+    <meta name="twitter:description" content="Kami menyediakan jasa pembuatan web streaming yang mudah dan sesuai keinginan anda">
+        
+    <title>:: Convergen ::</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/icon.gif" />
+    <link rel="stylesheet" href="./bower_components/twitter/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./bower_components/jquery-colorbox/example1/colorbox.css" />
+    <link rel="stylesheet" href="./style.css" />
+    
+  <body>
+    <div class="row">
+      <nav class="navbar navbar-default" ng-controller="NavController">
+					<div class="container">
+					       <ul class="nav navbar-nav">
+      						<li ng-class="getClass('/')"><a href="#"><i class="fa fa-home"></i> Beranda</a></li>
+                  <li ng-class="getClass('/detil')"><a href="#detil"><i class="fa fa-list"></i> Detil</a></li>
+      						<li  ng-class="getClass('/paket')"><a  href="#paket"><i class="fa fa-youtube-play "></i> Paket Streaming</a></a></li>
+      						<li ng-class="getClass('/client')"><a href="#client"><i class="fa fa-users"></i> Client</a></a></li>
+                  <li ng-class="getClass('/kontak')"><a href="#kontak"><i class="fa fa-phone"></i> Kontak Kami</a></li>
+                   <li ng-class="getClass('/profile')"><a href="#profile"><i class="fa fa-slideshare"></i> Profile</a></li>
+
+              </ul>
+					</div>
+				</nav>
+    </div>
+
+    <div class="row" style="background:#19B5FE">
+
+      <div id="clouds" style="overflow:auto">
+          <div ng-view ></div>
+      </div>
+    </div>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/jquery-colorbox/jquery.colorbox-min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-animate.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
